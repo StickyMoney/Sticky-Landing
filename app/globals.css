@@ -6,15 +6,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom font face for Impact font */
-@font-face {
-  font-family: "MEK-Mono";
-  src: url("/MEK-Mono.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 /* Base typography settings */
 @layer utilities {
   .text-balance {

@@ -96,7 +96,6 @@ const config: Config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        display: ["MEK-Mono", "monospace"],
         serif: ["Playfair Display", "serif"],
         'eight-bit': ['EightBitDragon', 'monospace'],
       },
