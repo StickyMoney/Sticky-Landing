@@ -60,6 +60,11 @@ const config: Config = {
           DEFAULT: "#B8860B", // Dark goldenrod - rich amber color
           dark: "#8B4513", // Dark amber brown
           resin: "#5E2605", // Dark reddish-brown
+          deep: "#040706", // Deep black-brown
+          rich: "#5B1707", // Rich dark brown
+          warm: "#CF5E02", // Warm amber
+          golden: "#D87E0A", // Golden amber
+          light: "#DC940F", // Light golden amber
         },
         black: "#0A0A0A", // Very dark background
       },
@@ -91,8 +96,9 @@ const config: Config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        display: ["Impact", "sans-serif"],
+        display: ["MEK-Mono", "monospace"],
         serif: ["Playfair Display", "serif"],
+        'eight-bit': ['EightBitDragon', 'monospace'],
       },
     },
   },

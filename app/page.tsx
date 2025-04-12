@@ -12,44 +12,52 @@
 
 import Link from "next/link"
 import { StickyMoney } from "@/components/sticky-money"
-import { BookIcon, GithubIcon, Twitter } from "lucide-react"
+import { BookOpen, GithubIcon, Twitter } from "lucide-react"
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col md:flex-row">
-      {/* Left Column - Dark Section */}
-      <div className="bg-[#0A0A0A] w-full md:w-1/4 p-8 flex flex-col justify-between min-h-[50vh] md:min-h-screen">
-        <div>
-          <div className="inline-block bg-[#B8860B] text-[#0A0A0A] font-bold px-4 py-2 mb-16">COMING SOON</div>
-
-          <div className="mt-16 text-[#B8860B] text-3xl md:text-4xl font-serif">
-            <h1 className="mb-4">A BSC-Native Lending Co-Operative.</h1>
-            <h2 className="mt-8">The deepest liquidity for BTCFi on Binance Smart Chain.</h2>
+      {/* Left Column - Rich brown with cream and yellow accents */}
+      <div className="bg-amber-resin w-full md:w-1/4 p-8 flex flex-col justify-between min-h-[50vh] md:min-h-screen">
+        <div className="flex flex-col justify-between h-full">
+          {/* Badge with light yellow */}
+          <div className="w-1/2 inline-block bg-[#FFE5B4] text-amber-resin font-eight-bit px-4 py-2 text-xl flex items-center justify-center border-2 border-amber-light">
+            STICKY.MONEY
           </div>
-        </div>
-
-        <div className="flex space-x-4 mt-8">
-          <Link href="#" className="bg-[#B8860B] rounded-full p-2 flex items-center justify-center w-10 h-10">
-            <BookIcon className="w-6 h-6 text-[#0A0A0A]" />
-          </Link>
-          <Link href="#" className="bg-[#B8860B] rounded-full p-2 flex items-center justify-center w-10 h-10">
-            <GithubIcon className="w-6 h-6 text-[#0A0A0A]" />
-          </Link>
-          <Link href="#" className="bg-[#B8860B] rounded-full p-2 flex items-center justify-center w-10 h-10">
-            <Twitter className="w-6 h-6 text-[#0A0A0A]" />
-          </Link>
+          {/* Text in cream */}
+          <div className="text-[#FFF5E1] text-3xl md:text-4xl font-serif">
+            <h1>A BSC-Native Lending Co-Operative.</h1>
+            <h2 className="mt-16">The deepest liquidity for BTCFi on Binance Smart Chain.</h2>
+          </div>
+          {/* Social links with orange hover */}
+          <div className="flex space-x-4">
+            <Link 
+              href="#"
+              className="bg-[#FFE5B4] rounded-full p-2 flex items-center justify-center w-10 h-10 hover:bg-[#FF8C42] transition-colors"
+              prefetch={false}
+            >
+              <BookOpen className="w-6 h-6 text-amber-resin" />
+            </Link>
+            <Link 
+              href="#"
+              className="bg-[#FFE5B4] rounded-full p-2 flex items-center justify-center w-10 h-10 hover:bg-[#FF8C42] transition-colors"
+              prefetch={false}
+            >
+              <GithubIcon className="w-6 h-6 text-amber-resin" />
+            </Link>
+            <Link 
+              href="#"
+              className="bg-[#FFE5B4] rounded-full p-2 flex items-center justify-center w-10 h-10 hover:bg-[#FF8C42] transition-colors"
+              prefetch={false}
+            >
+              <Twitter className="w-6 h-6 text-amber-resin" />
+            </Link>
+          </div>
         </div>
       </div>
 
-      {/* Right Column - Amber Section */}
-      <div className="bg-[#B8860B] w-full md:w-3/4 flex items-center justify-center p-8">
-        <div className="space-y-4">
-          <StickyMoney variant="solid" />
-          <StickyMoney variant="outline" />
-          <StickyMoney variant="solid" />
-          <StickyMoney variant="outline" />
-          <StickyMoney variant="outline" />
-        </div>
+      {/* Right Column - Now using the same warm tan color */}
+      <div className="bg-[#FFE5B4] w-full md:w-3/4 flex items-center justify-center p-8">
       </div>
     </main>
   )

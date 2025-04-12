@@ -19,20 +19,19 @@ interface StickyMoneyProps {
 }
 
 export function StickyMoney({ variant }: StickyMoneyProps) {
-  // Dark brown color for text - rich and professional
-  const textColor = "#5E2605"
+  // Using amber-rich for text color
+  const textColor = "#5B1707"
 
   return (
     <div className="flex items-center">
       <div
         className={cn(
-          "text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter",
-          variant === "outline" ? "text-transparent" : "",
+          "text-5xl md:text-6xl lg:text-7xl font-black tracking-[0.1em]",
+          variant === "outline" ? "text-transparent [text-shadow:2px_2px_0_#5B1707,-2px_-2px_0_#5B1707,2px_-2px_0_#5B1707,-2px_2px_0_#5B1707]" : "",
           "font-display",
         )}
         style={{
           color: variant === "outline" ? "transparent" : textColor,
-          WebkitTextStroke: variant === "outline" ? `2px ${textColor}` : "none",
           fontFamily: "'Impact', sans-serif",
         }}
       >
@@ -40,13 +39,12 @@ export function StickyMoney({ variant }: StickyMoneyProps) {
       </div>
       <div
         className={cn(
-          "text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter ml-4",
-          variant === "outline" ? "text-transparent" : "",
+          "text-5xl md:text-6xl lg:text-7xl font-black tracking-[0.1em] ml-4",
+          variant === "outline" ? "text-transparent [text-shadow:2px_2px_0_#5B1707,-2px_-2px_0_#5B1707,2px_-2px_0_#5B1707,-2px_2px_0_#5B1707]" : "",
           "font-display",
         )}
         style={{
           color: variant === "outline" ? "transparent" : textColor,
-          WebkitTextStroke: variant === "outline" ? `2px ${textColor}` : "none",
           fontFamily: "'Impact', sans-serif",
         }}
       >
